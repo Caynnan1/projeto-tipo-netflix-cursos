@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #121212;
+}
+
+.navbarpc{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: white;
+}
+
+.navbarpc a{
+    text-decoration: none;
+    color: rosybrown;
+}
+
+.navbarpc img{
+    max-width: 20px;
+    transition: background-color 0.2s;
+}
+
+.navbarpc img:hover{
+    background-color: #555555;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.navbarpc ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbarpc ul li{
+    margin-left: 15px;
+    list-style: none;
+}
+
+.navbarpc .user .area-user{
+    padding-left: 15px;
+}
+
+.banner {
+    position: absolute;
+    z-index: -1;
+    width: 100%; /* Defina a largura como 100% */
+    max-height: 500px; /* Defina uma altura máxima, por exemplo, 200px */
+    overflow: hidden; /* Oculta qualquer parte que ultrapasse a altura máxima */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Adicione uma sombra com desfoque para suavizar a transição */
+}
+
+.banner img {
+    width: 100%;
+    height: auto; /* Mantenha a altura automática para manter a proporção original */
+}
+
+.cursos {
+    padding-top: 20%;
+    padding-left: 30px;
+    color: white;
+}
+
+.text-banner h1{
+    position: relative;
+    padding-top: 16%;
+    padding-left: 16px;
+    color: white;
+}
+
+.listacursos{
+    display: flex;
+    overflow-y: auto;
+}
+
+.listacursos img{
+    min-height: 40vh;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 8px 0px 5px rgba(255, 254, 254, 0.1); /* Adicione uma sombra com desfoque para suavizar a transição */
+}
+
+.listacursos li{
+    padding-left: 20px;
+}
+
+.listacursos li{
+    list-style: none;
+}
+
+.footer{
+    padding-top: 10vh;
+    color: white;
+}
+
+.footer p{
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .cursos {
+        padding-top: 80%;
+        padding-left: 30px;
+        color: white;
+    }
+
+        .banner {
+        position: absolute;
+        z-index: -1;
+        width: 100%; /* Defina a largura como 100% */
+        max-height: 500px; /* Defina uma altura máxima, por exemplo, 200px */
+        overflow: hidden; /* Oculta qualquer parte que ultrapasse a altura máxima */
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Adicione uma sombra com desfoque para suavizar a transição */
+    }
+
+    .banner img {
+        width: 100vh;
+        height: auto; /* Mantenha a altura automática para manter a proporção original */
+    }
+
+    .listacursos img{
+        min-height: 10vh;
+        max-width: 80px;
+        border-radius: 10px;
+        box-shadow: 8px 0px 5px rgba(255, 254, 254, 0.1); /* Adicione uma sombra com desfoque para suavizar a transição */
+    }
+}
